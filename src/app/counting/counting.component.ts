@@ -11,6 +11,12 @@ export class Title {
     @Input()
     title: string;
     text: string;
+    count = 0;
 
-    constructor(){}
+    constructor(){
+    }
+
+    countN() {
+        this.count = this.count + 1;
+    }
 }
