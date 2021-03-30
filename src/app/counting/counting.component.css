@@ -4,10 +4,11 @@
     letter-spacing: 0.02em;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
-    width: 80%;
-    margin:auto;
+    width: 100%;
+    margin: 0;
 }
 /* h2 {
     background-color: lightsalmon;
@@ -26,11 +27,41 @@ p {
 h3 {      
     padding: 10px;
 }
+button {
+    padding: 15px;
+    margin: 10px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
 .title {
-    margin: 0;
+    margin: auto;
     padding: 10px;
+    text-align: center;
     color: aliceblue;
     background-color: salmon;
+}
+.subTitle {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5em;
+}
+.mainItem {
+    width: 80%;
+    margin:auto;
+}
+.imgItem {
+    width: 95%;
+}
+.item {
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 24%;
+    /* height: 410px; */
+    background-color: rgb(237, 244, 252);
+    text-align: center;
 }
 .name {
     font-weight: 600;
@@ -49,10 +80,55 @@ h3 {
     font-size: 0.9em;
     font-weight: 300;
 }
+.cartBlock {
+    clear: both;
+    margin:auto;
+    width: 100%;
+    /* padding-left: 100px; */
+    background-color: rgb(255, 241, 224);
+}
+.subCartBlock {
+    width: 85%;
+    margin: auto;
+}
 .cart {        
     padding: 10px;
 }
 .incart {
-    color: salmon;        
+    text-indent: 20px;
+    color: steelblue;        
     padding: 10px;
+}
+.remove {
+    padding: 2px;
+    font-weight: 400;
+    color: rgb(240, 240, 240);
+    background-color: rgb(255, 109, 109);
+}
+.remove:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 1126px){
+    .item {
+        width: 46%;
+    }
+    #item2 {
+        clear: both;
+    }
+}
+@media screen and (max-width: 800px){
+    * {
+        margin: 0;
+        padding: 0; 
+    }
+    body, .item, .mainItem {
+        margin: 0;
+        width: 100%;
+        clear: both;
+    }
+    .item {
+        text-align: center;
+        margin-bottom: 2px;
+    }
 }

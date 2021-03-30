@@ -38,7 +38,7 @@ export class Title {
         
     }
     remove0() {
-        if(this.cart[0] == 0) {
+        if(this.cart[0] <= 0) {
             return 0;
         }
         this.cart[0] = this.cart[0] - this.cart[0];
@@ -53,10 +53,10 @@ export class Title {
             );
     }
     remove1() {
-        if(this.cart[1] == 0) {
+        if(this.cart[1] <= 0) {
             return 0;
         }
-        this.cart[1] = this.cart[1] - this.count[1];
+        this.cart[1] = this.cart[1] - this.cart[1];
         this.totalP = (
             this.cart[0] * this.items[0].price
             ) + (
@@ -68,10 +68,10 @@ export class Title {
             );
     }
     remove2() {
-        if(this.cart[2] == 0) {
+        if(this.cart[2] <= 0) {
             return 0;
         }
-        this.cart[2] = this.cart[2] - this.count[2];
+        this.cart[2] = this.cart[2] - this.cart[2];
         this.totalP = (
             this.cart[0] * this.items[0].price
             ) + (
@@ -83,10 +83,10 @@ export class Title {
             );
     }
     remove3() {
-        if(this.cart[3] == 0) {
+        if(this.cart[3] <= 0) {
             return 0;
         }
-        this.cart[3] = this.cart[3] - this.count[3];
+        this.cart[3] = this.cart[3] - this.cart[3];
         this.totalP = (
             this.cart[0] * this.items[0].price
             ) + (

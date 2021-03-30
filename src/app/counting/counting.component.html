@@ -1,68 +1,85 @@
+<body>
 <div>
     <div><h2 class = "title">{{ title }}</h2></div>
-    <div><p>Add item which you want in the cart.</p></div>
+    <div><p class = "subTitle">Add item which you want in the cart.</p></div>
     <!-- <div>
         Search : <input [(ngModel)] = "text"/>
     </div> -->
-    <div> 
-        <h2 class = "name">{{ items[0].name }}</h2> 
-        <p class = "price">
-            <span>Price : {{ items[0].price }} Bath</span>
-        </p>
-        <p class = "quanity">Quanity : {{ count[0] }} pcs. </p>
-        <button (click) = "countN0()">+</button>
-        <button (click) = "countND0()">-</button>
-        <button (click) = "cart0()">add to cart</button>
+    <div class = "mainItem">
+        <div class = "item"> 
+            <div class = "photo">
+                <img src="https://store.weloveshopping.com/upload/gallery5/943745/8/e1/dedb4e35b711ee82ea928cfa3e358e18.jpg" alt="iPhone12 Pro Max" class="imgItem">
+            </div>
+            <h2 class = "name">{{ items[0].name }}</h2> 
+            <p class = "price">
+                <span>Price : {{ items[0].price }} Bath</span>
+            </p>
+            <p class = "quanity">Quanity : {{ count[0] }} pcs. </p>
+            <button (click) = "countN0()">+</button>
+            <button (click) = "countND0()">-</button> <br>
+            <button (click) = "cart0()">add to cart</button>
+        </div>
+        <div class = "item"> 
+            <div class = "photo">
+                <img src="https://store.weloveshopping.com/upload/gallery5/943745/e/d6/710a7876577ca572b2639c5589f1fd6e.jpg" alt="iPhone12 Pro" class="imgItem">
+            </div>
+            <h2 class = "name">{{ items[1].name }}</h2> 
+            <p class = "price">
+                <span>Price : {{ items[1].price }} Bath</span>
+            </p>
+            <p class = "quanity">Quanity : {{ count[1] }} pcs. </p>
+            <button (click) = "countN1()">+</button>
+            <button (click) = "countND1()">-</button> <br>
+            <button (click) = "cart1()">add to cart</button>
+        </div>
+        <div class = "item" id="item2"> 
+            <div class = "photo">
+                <img src="https://store.weloveshopping.com/upload/gallery5/943745/a/1c/60d95c206f133e21b58f8ac935dfa1ca.jpg" alt="iPhone12" class="imgItem">
+            </div>
+            <h2 class = "name">{{ items[2].name }}</h2> 
+            <p class = "price">
+                <span>Price : {{ items[2].price }} Bath</span>
+            </p>
+            <p class = "quanity">Quanity : {{ count[2] }} pcs. </p>
+            <button (click) = "countN2()">+</button>
+            <button (click) = "countND2()">-</button> <br>
+            <button (click) = "cart2()">add to cart</button>
+        </div>
+        <div class = "item"> 
+            <div class = "photo">
+                <img src="https://store.weloveshopping.com/upload/gallery5/943745/3/70/52e8a448ed0b100f97da42f12bf5d703.jpg" alt="iPhone12 Mini" class="imgItem">
+            </div>
+            <h2 class = "name">{{ items[3].name }}</h2> 
+            <p class = "price">
+                <span>Price : {{ items[3].price }} Bath</span>
+            </p>
+            <p class = "quanity">Quanity : {{ count[3] }} pcs. </p>
+            <button (click) = "countN3()">+</button>
+            <button (click) = "countND3()">-</button> <br>
+            <button (click) = "cart3()">add to cart</button>
+        </div>
     </div>
-    <div> 
-        <h2 class = "name">{{ items[1].name }}</h2> 
-        <p class = "price">
-            <span>Price : {{ items[1].price }} Bath</span>
-        </p>
-        <p class = "quanity">Quanity : {{ count[1] }} pcs. </p>
-        <button (click) = "countN1()">+</button>
-        <button (click) = "countND1()">-</button>
-        <button (click) = "cart1()">add to cart</button>
-    </div>
-    <div> 
-        <h2 class = "name">{{ items[2].name }}</h2> 
-        <p class = "price">
-            <span>Price : {{ items[2].price }} Bath</span>
-        </p>
-        <p class = "quanity">Quanity : {{ count[2] }} pcs. </p>
-        <button (click) = "countN2()">+</button>
-        <button (click) = "countND2()">-</button>
-        <button (click) = "cart2()">add to cart</button>
-    </div>
-    <div> 
-        <h2 class = "name">{{ items[3].name }}</h2> 
-        <p class = "price">
-            <span>Price : {{ items[3].price }} Bath</span>
-        </p>
-        <p class = "quanity">Quanity : {{ count[3] }} pcs. </p>
-        <button (click) = "countN3()">+</button>
-        <button (click) = "countND3()">-</button>
-        <button (click) = "cart3()">add to cart</button>
-    </div>
-    <div> 
-        <h2 class = "cart">In Cart</h2> 
-        <p class = "incart">
-            <span>{{ items[0].name }} : {{ cart[0] }} pcs.</span>
-            <button (click) = "remove0()">remove</button>
-        </p>
-        <p class = "incart">
-            <span>{{ items[1].name }} : {{ cart[1] }} pcs.</span>
-            <button (click) = "remove1()">remove</button>
-        </p>
-        <p class = "incart">
-            <span>{{ items[2].name }} : {{ cart[2] }} pcs.</span>
-            <button (click) = "remove2()">remove</button>
-        </p>
-        <p class = "incart">
-            <span>{{ items[3].name }} : {{ cart[3] }} pcs.</span>
-            <button (click) = "remove3()">remove</button>
-        </p>
-        <h3>Totol {{ totalP }} bath</h3>
-        
+    <div class = "cartBlock"> 
+        <div class = "subCartBlock">
+            <h2 class = "cart">In Cart</h2> 
+            <p class = "incart">
+                <span>{{ items[0].name }} : {{ cart[0] }} pcs.</span>
+                <button (click) = "remove0()" class="remove">remove</button>
+            </p>
+            <p class = "incart">
+                <span>{{ items[1].name }} : {{ cart[1] }} pcs.</span>
+                <button (click) = "remove1()" class="remove">remove</button>
+            </p>
+            <p class = "incart">
+                <span>{{ items[2].name }} : {{ cart[2] }} pcs.</span>
+                <button (click) = "remove2()" class="remove">remove</button>
+            </p>
+            <p class = "incart">
+                <span>{{ items[3].name }} : {{ cart[3] }} pcs.</span>
+                <button (click) = "remove3()" class="remove">remove</button>
+            </p>
+            <h3>Totol {{ totalP }} bath</h3>
+        </div>
     </div>
 </div>
+</body>
