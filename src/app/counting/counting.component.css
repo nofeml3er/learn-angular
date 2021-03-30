@@ -1,0 +1,58 @@
+* {
+    /* outline: 1px dashed; */
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 80%;
+    margin:auto;
+}
+/* h2 {
+    background-color: lightsalmon;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 3px 3px 3px 10px;
+    margin-bottom: 10px;
+} */
+p {
+    font-size: 0.85em;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h3 {      
+    padding: 10px;
+}
+.title {
+    margin: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: salmon;
+}
+.name {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 3px 3px 3px 10px;
+    /* margin-bottom: 10px; */
+}
+.price {
+    padding: 3px 3px 3px 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: salmon;
+}
+.quanity {
+    padding: 3px 3px 3px 10px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.cart {        
+    padding: 10px;
+}
+.incart {
+    color: salmon;        
+    padding: 10px;
+}

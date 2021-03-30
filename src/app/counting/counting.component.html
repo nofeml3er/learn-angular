@@ -1,11 +1,68 @@
 <div>
-    <div><h2>{{ title }}</h2></div>
-    <div><p>Type text which you want : {{ text }}</p></div>
-    <div>
-        Type : <input [(ngModel)] = "text"/>
+    <div><h2 class = "title">{{ title }}</h2></div>
+    <div><p>Add item which you want in the cart.</p></div>
+    <!-- <div>
+        Search : <input [(ngModel)] = "text"/>
+    </div> -->
+    <div> 
+        <h2 class = "name">{{ items[0].name }}</h2> 
+        <p class = "price">
+            <span>Price : {{ items[0].price }} Bath</span>
+        </p>
+        <p class = "quanity">Quanity : {{ count[0] }} pcs. </p>
+        <button (click) = "countN0()">+</button>
+        <button (click) = "countND0()">-</button>
+        <button (click) = "cart0()">add to cart</button>
     </div>
     <div> 
-        <div>{{ count }}</div>
-        <button (click) = "countN()">Count</button>
+        <h2 class = "name">{{ items[1].name }}</h2> 
+        <p class = "price">
+            <span>Price : {{ items[1].price }} Bath</span>
+        </p>
+        <p class = "quanity">Quanity : {{ count[1] }} pcs. </p>
+        <button (click) = "countN1()">+</button>
+        <button (click) = "countND1()">-</button>
+        <button (click) = "cart1()">add to cart</button>
+    </div>
+    <div> 
+        <h2 class = "name">{{ items[2].name }}</h2> 
+        <p class = "price">
+            <span>Price : {{ items[2].price }} Bath</span>
+        </p>
+        <p class = "quanity">Quanity : {{ count[2] }} pcs. </p>
+        <button (click) = "countN2()">+</button>
+        <button (click) = "countND2()">-</button>
+        <button (click) = "cart2()">add to cart</button>
+    </div>
+    <div> 
+        <h2 class = "name">{{ items[3].name }}</h2> 
+        <p class = "price">
+            <span>Price : {{ items[3].price }} Bath</span>
+        </p>
+        <p class = "quanity">Quanity : {{ count[3] }} pcs. </p>
+        <button (click) = "countN3()">+</button>
+        <button (click) = "countND3()">-</button>
+        <button (click) = "cart3()">add to cart</button>
+    </div>
+    <div> 
+        <h2 class = "cart">In Cart</h2> 
+        <p class = "incart">
+            <span>{{ items[0].name }} : {{ cart[0] }} pcs.</span>
+            <button (click) = "remove0()">remove</button>
+        </p>
+        <p class = "incart">
+            <span>{{ items[1].name }} : {{ cart[1] }} pcs.</span>
+            <button (click) = "remove1()">remove</button>
+        </p>
+        <p class = "incart">
+            <span>{{ items[2].name }} : {{ cart[2] }} pcs.</span>
+            <button (click) = "remove2()">remove</button>
+        </p>
+        <p class = "incart">
+            <span>{{ items[3].name }} : {{ cart[3] }} pcs.</span>
+            <button (click) = "remove3()">remove</button>
+        </p>
+        <h3>Totol {{ totalP }} bath</h3>
+        
     </div>
 </div>
