@@ -75,7 +75,7 @@ button {
     font-weight: 600;
     color: salmon;
 }
-.quanity {
+.quanity, .plus {
     padding: 3px 3px 3px 10px;
     font-size: 0.9em;
     font-weight: 300;
@@ -108,7 +108,10 @@ button {
 .remove:hover {
     background-color: red;
 }
-
+.plus {
+    color:rgb(253, 0, 0);
+    font-weight: 600;
+}
 @media screen and (max-width: 1126px){
     .item {
         width: 46%;

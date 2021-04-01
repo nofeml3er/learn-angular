@@ -14,7 +14,7 @@
             <p class = "price">
                 <span>Price : {{ items[0].price }} Bath</span>
             </p>
-            <p class = "quanity">Quanity : {{ count[0] }} pcs. </p>
+            <p class = "quanity" [ngClass]="{plus : checkColor(0)}">Quanity : {{ count[0] }} pcs. </p>
             <button (click) = "countN0()">+</button>
             <button (click) = "countND0()">-</button> <br>
             <button (click) = "cart0()">add to cart</button>
@@ -27,7 +27,7 @@
             <p class = "price">
                 <span>Price : {{ items[1].price }} Bath</span>
             </p>
-            <p class = "quanity">Quanity : {{ count[1] }} pcs. </p>
+            <p class = "quanity" [ngClass]="{plus : checkColor(1)}">Quanity : {{ count[1] }} pcs. </p>
             <button (click) = "countN1()">+</button>
             <button (click) = "countND1()">-</button> <br>
             <button (click) = "cart1()">add to cart</button>
@@ -40,7 +40,7 @@
             <p class = "price">
                 <span>Price : {{ items[2].price }} Bath</span>
             </p>
-            <p class = "quanity">Quanity : {{ count[2] }} pcs. </p>
+            <p class = "quanity" [ngClass]="{plus : checkColor(2)}">Quanity : {{ count[2] }} pcs. </p>
             <button (click) = "countN2()">+</button>
             <button (click) = "countND2()">-</button> <br>
             <button (click) = "cart2()">add to cart</button>
@@ -53,7 +53,7 @@
             <p class = "price">
                 <span>Price : {{ items[3].price }} Bath</span>
             </p>
-            <p class = "quanity">Quanity : {{ count[3] }} pcs. </p>
+            <p class = "quanity" [ngClass]="{plus : checkColor(3)}">Quanity : {{ count[3] }} pcs. </p>
             <button (click) = "countN3()">+</button>
             <button (click) = "countND3()">-</button> <br>
             <button (click) = "cart3()">add to cart</button>
@@ -62,19 +62,19 @@
     <div class = "cartBlock"> 
         <div class = "subCartBlock">
             <h2 class = "cart">In Cart</h2> 
-            <p class = "incart">
+            <p class = "incart" [ngClass]="{plus : checkCart(0)}">
                 <span>{{ items[0].name }} : {{ cart[0] }} pcs.</span>
                 <button (click) = "remove0()" class="remove">remove</button>
             </p>
-            <p class = "incart">
+            <p class = "incart" [ngClass]="{plus : checkCart(1)}">
                 <span>{{ items[1].name }} : {{ cart[1] }} pcs.</span>
                 <button (click) = "remove1()" class="remove">remove</button>
             </p>
-            <p class = "incart">
+            <p class = "incart" [ngClass]="{plus : checkCart(2)}">
                 <span>{{ items[2].name }} : {{ cart[2] }} pcs.</span>
                 <button (click) = "remove2()" class="remove">remove</button>
             </p>
-            <p class = "incart">
+            <p class = "incart" [ngClass]="{plus : checkCart(3)}">
                 <span>{{ items[3].name }} : {{ cart[3] }} pcs.</span>
                 <button (click) = "remove3()" class="remove">remove</button>
             </p>

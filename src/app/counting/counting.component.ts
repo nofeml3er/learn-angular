@@ -31,12 +31,27 @@ export class Title {
         name: "iPhone12 Mini", 
         price: 31900 
     }];
-    
+    color: boolean;
+    colorCart: boolean;
+
     totalP = 0;
     
     constructor(){
         
     }
+    checkColor(x) {
+        if(this.count[x] > 1) {
+            return this.color = true;
+        }
+        return this.color = false;
+    }
+    checkCart(y) {
+        if(this.cart[y] > 0) {
+            return this.colorCart = true;
+        }
+        return this.colorCart = false;
+    }
+
     remove0() {
         if(this.cart[0] <= 0) {
             return 0;
