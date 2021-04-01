@@ -1,0 +1,12 @@
+.number-even {
+    color: green;
+}
+.number-odd {
+    color: red;
+}
+.number-even, .number-odd {
+    font-weight: 600;
+}
+li {
+    list-style: none;
+}

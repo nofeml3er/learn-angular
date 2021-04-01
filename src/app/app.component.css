@@ -1,0 +1,9 @@
+.center {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+.left {
+    margin: auto;
+    padding: 30px;
+}

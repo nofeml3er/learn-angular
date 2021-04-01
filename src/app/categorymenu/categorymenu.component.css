@@ -1,0 +1,49 @@
+* {
+    margin: auto;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    padding-bottom: 10px;
+}
+/* li {
+    text-decoration: none;
+    list-style: none;
+}
+ul {
+    clear: both;
+} */
+/* .iconCat {
+    float: left;
+    padding: 30px;
+}
+.catMenu {
+    padding: 10px;
+} */
+.category {
+    width: 100%;
+    text-align: center;
+    clear: both;
+    /* background-color:lawngreen; */
+}
+.fix {
+    width: 80%;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+.iconBlock1 {
+    margin: auto;
+    float: left;
+    padding: 10px 5%;
+    width: 14%;
+    text-align: center;
+}
+/* .categoryMenu {
+    text-align: center;
+    clear: both;
+} */
