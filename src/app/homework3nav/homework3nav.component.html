@@ -4,10 +4,13 @@
     </div>
     <div class = "menu">
         <ul class = "ul">
-            <li *ngFor = "let item of menu.reverse()" class = "listMenu" [ngClass] = "{login : btnLogin(item)}">{{ item }}</li>
+            <a href="#item"><li *ngFor = "let item of menu.reverse()" class = "listMenu" [ngClass] = "{login : btnLogin(item)}">{{ item }}</li></a>
         </ul>
     </div>
     <div class = "head">
         <app-homework3head></app-homework3head>
+    </div>
+    <div class = "searchBar">
+        <app-homework3search></app-homework3search>
     </div>
 </div>

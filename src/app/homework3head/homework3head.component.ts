@@ -17,8 +17,5 @@ export class Homework3headComponent implements OnInit {
   //   console.log(2);
   // }
 
-  signUp() {
-
-  }
-
+ 
 }

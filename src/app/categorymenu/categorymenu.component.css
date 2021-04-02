@@ -3,6 +3,7 @@
     padding: 0;
     display: block;
     box-sizing: border-box;
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -26,7 +27,6 @@ ul {
 } */
 .category {
     width: 100%;
-    text-align: center;
     clear: both;
     /* background-color:lawngreen; */
 }
@@ -41,9 +41,4 @@ ul {
     float: left;
     padding: 10px 5%;
     width: 14%;
-    text-align: center;
 }
-/* .categoryMenu {
-    text-align: center;
-    clear: both;
-} */

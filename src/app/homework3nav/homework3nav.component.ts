@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class Homework3navComponent implements OnInit {
   @Input()
   menu = ["Home", "About", "Career", "Login"];
-  logo = "https://picsum.photos/id/175/300/100";
+  logo = "https://picsum.photos/id/175/300/80";
   bg ="https://picsum.photos/id/256/1920/400";
   btnLog: boolean;
 

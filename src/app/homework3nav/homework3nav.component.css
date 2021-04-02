@@ -2,11 +2,15 @@
     margin: auto;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 .navBar {
-    height: 600px;
-    /* background-color: lightgrey; */
-    background-image: url("https://picsum.photos/id/256/1920/600");
+    height: max-content;
+    background-image: url("https://picsum.photos/id/256/3840/600");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .ul {
@@ -37,4 +41,10 @@
     padding: 30px;
     text-align: center;
     clear: both;
+}
+.searchBar {
+    padding: 30px;
+    text-align: center;
+    clear: both;
+
 }

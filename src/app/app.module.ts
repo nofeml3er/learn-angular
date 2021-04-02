@@ -15,6 +15,7 @@ import { Homework3Component } from './homework3/homework3.component';
 import { Homework3navComponent } from './homework3nav/homework3nav.component';
 import { Homework3searchComponent } from './homework3search/homework3search.component';
 import { Homework3headComponent } from './homework3head/homework3head.component';
+import { Homework3bodyComponent } from './homework3body/homework3body.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Homework3headComponent } from './homework3head/homework3head.component'
     Homework3Component,
     Homework3navComponent,
     Homework3searchComponent,
-    Homework3headComponent
+    Homework3headComponent,
+    Homework3bodyComponent
   ],
   imports: [
     BrowserModule,
