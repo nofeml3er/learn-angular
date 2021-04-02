@@ -1,0 +1,13 @@
+<div class = "navBar">
+    <div class = "logo">
+        <img src = "{{ logo }}" alt="logo">
+    </div>
+    <div class = "menu">
+        <ul class = "ul">
+            <li *ngFor = "let item of menu.reverse()" class = "listMenu" [ngClass] = "{login : btnLogin(item)}">{{ item }}</li>
+        </ul>
+    </div>
+    <div class = "head">
+        <app-homework3head></app-homework3head>
+    </div>
+</div>

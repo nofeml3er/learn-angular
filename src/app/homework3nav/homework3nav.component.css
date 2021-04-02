@@ -1,0 +1,40 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+.navBar {
+    height: 600px;
+    /* background-color: lightgrey; */
+    background-image: url("https://picsum.photos/id/256/1920/600");
+}
+
+.ul {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.logo {
+    padding-top: 15px;
+    padding-left: 20px;
+    float: left;
+    display: block;
+}
+
+.listMenu {
+    padding-top: 10%;
+    padding: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+
+.login {
+    background-color: darkgray;
+    color:azure;
+}
+.head {
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}

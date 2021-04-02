@@ -11,6 +11,10 @@ import { TopbannerComponent } from './topbanner/topbanner.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { CategorymenuComponent } from './categorymenu/categorymenu.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { Homework3Component } from './homework3/homework3.component';
+import { Homework3navComponent } from './homework3nav/homework3nav.component';
+import { Homework3searchComponent } from './homework3search/homework3search.component';
+import { Homework3headComponent } from './homework3head/homework3head.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { TodolistComponent } from './todolist/todolist.component';
     TopbannerComponent,
     SearchbarComponent,
     CategorymenuComponent,
-    TodolistComponent
+    TodolistComponent,
+    Homework3Component,
+    Homework3navComponent,
+    Homework3searchComponent,
+    Homework3headComponent
   ],
   imports: [
     BrowserModule,
