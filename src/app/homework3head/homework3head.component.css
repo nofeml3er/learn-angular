@@ -26,9 +26,21 @@
     color:azure;
     border: none;
     border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+    transition: 0.3s;
+}
+.moreDetail:hover {
+    background-color: rgb(214, 214, 214);
+    color:darkblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .signUp {
     margin-left: 20px;
     background-color: lightblue;
     color: darkblue;
+}
+.signUp:hover {
+    background-color: rgb(209, 242, 253);
+    color: rgb(56, 56, 167);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
