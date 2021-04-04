@@ -1,17 +1,28 @@
 <div>
-    <div class = "center">
-        <app-Lab4></app-Lab4> <!-- ข้อ11 lab4-->
-        <hr>
-        <app-title [title] = "'Shopping Online (Counting shop)'"></app-title> <!-- ข้อ10 lab3-->
-        <hr>
-        <app-home></app-home> <!-- ข้อ13.1 homework1-->
+    <div class = "button">
+        <a class="navbar" routerLink="/lab4" routerLinkActive="active">Homework ข้อ 11 Lab4</a>
+        <a class="navbar" routerLink="/lab3" routerLinkActive="active">Homework ข้อ 10 Lab3</a>
+        <a class="navbar" routerLink="/home" routerLinkActive="active">Homework ข้อ 13.1</a>      
+        <a class="navbar" routerLink="/todolist" routerLinkActive="active">Homework ข้อ 13.2 และ ข้อ 13.4</a>      
+        <a class="navbar" routerLink="/homework3" routerLinkActive="active">Homework ข้อ 13.3</a>      
     </div>
-    <hr>
-    <div class = "left">
-        <app-todolist></app-todolist> <!-- ข้อ13.2 homework2 และข้อ13.4 เพิ่มปุ่มลบ toDO-->
-    </div>
-    <hr>
-    <div class = "web">
-        <app-homework3></app-homework3> <!-- ข้อ13.3 homework3-->
+    <div class = "show">
+        <router-outlet></router-outlet>
     </div>
 </div>
+
+<!-- <div class = "center">
+    <app-Lab4></app-Lab4>
+    <hr>
+    <app-title></app-title> 
+    <hr>
+    <app-home></app-home>
+</div>
+<hr>
+<div class = "left">
+    <app-todolist></app-todolist>
+</div>
+<hr>
+<div class = "web">
+    <app-homework3></app-homework3> 
+</div> -->

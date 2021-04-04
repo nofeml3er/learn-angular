@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { Title } from './counting/counting.component';
@@ -16,6 +17,14 @@ import { Homework3navComponent } from './homework3nav/homework3nav.component';
 import { Homework3searchComponent } from './homework3search/homework3search.component';
 import { Homework3headComponent } from './homework3head/homework3head.component';
 import { Homework3bodyComponent } from './homework3body/homework3body.component';
+
+const appRoutes: Routes = [
+  { path: 'lab4', component: Lab4 }, //ข้อ11
+  { path: 'lab3', component: Title }, //ข้อ10
+  { path: 'home', component: HomeComponent },//ข้อ13.1
+  { path: 'todolist', component: TodolistComponent }, //ข้อ13.2 + ข้อ 13.4
+  { path: 'homework3', component: Homework3Component } //ข้อ13.3
+];
 
 @NgModule({
   declarations: [
@@ -36,7 +45,11 @@ import { Homework3bodyComponent } from './homework3body/homework3body.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } // <-- debugging purposes only set true
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
